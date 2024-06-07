@@ -1,7 +1,4 @@
-document.getElementById('check').addEventListener('click', fu
-nction() {
-const password = document.getElementById('password').valu
-e;
-document.getElementById('feedback').textContent = `Passwo
-rd length: ${password.length}`;
+document.getElementById('check').addEventListener('click', function() {
+    const password = document.getElementById('password').value;
+    document.getElementById('feedback').textContent = `Password length: ${password.length}`;
 });
