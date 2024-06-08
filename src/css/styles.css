@@ -59,19 +59,10 @@ ul {
 }
 
 li {
-    background: rgba(255, 255, 255, 0.2);
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
     transition: background 0.3s;
-}
-
-li:nth-child(even) {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-li:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.2);
 }
 
 .feedback-message {
@@ -80,10 +71,31 @@ li:nth-child(odd) {
     color: #fff;
     margin-bottom: 10px;
 }
+
 .feedback-message.insecure {
     background-color: red;
 }
+
 .feedback-message.secure {
     background-color: green;
+}
+
+.leak-message {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.leak-message.leaked {
+    background-color: red;
+}
+
+.leak-message.not-leaked {
+    background-color: green;
+}
+
+.feedback-item {
+    background-color: orange;
+    color: #fff;
 }
 
